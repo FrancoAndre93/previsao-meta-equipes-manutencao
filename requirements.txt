@@ -1,0 +1,8 @@
+# [PENDENTE] Travar versões: no Colab que gerou os números, rodar
+#   !pip freeze | grep -iE "^(pandas|numpy|scikit-learn|matplotlib|openpyxl)=="
+# e substituir as linhas abaixo pelo resultado (formato pacote==versão).
+pandas
+numpy
+scikit-learn
+matplotlib
+openpyxl

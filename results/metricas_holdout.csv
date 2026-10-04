@@ -1,0 +1,12 @@
+modelo;particao;limiar;metrica;valor;ic95_inf;ic95_sup
+regressao_logistica;holdout_ago_dez_2025;;roc_auc;0,8237;0,750;0,894
+regressao_logistica;holdout_ago_dez_2025;0,5;recall_classe_0;0,6286;0,483;0,788
+regressao_logistica;holdout_ago_dez_2025;0,5;verdadeiro_negativo;22;;
+regressao_logistica;holdout_ago_dez_2025;0,5;falso_positivo;13;;
+regressao_logistica;holdout_ago_dez_2025;0,5;falso_negativo;23;;
+regressao_logistica;holdout_ago_dez_2025;0,5;verdadeiro_positivo;89;;
+regressao_logistica;holdout_ago_dez_2025;0,583;recall_classe_0;0,80;;
+regressao_logistica;holdout_ago_dez_2025;0,583;precisao_classe_0;0,47;;
+persistencia;holdout_ago_dez_2025;;roc_auc;0,8069;;
+persistencia;holdout_ago_dez_2025;;recall_classe_0;0,5429;;
+random_forest;holdout_ago_dez_2025;;roc_auc;0,7773;;

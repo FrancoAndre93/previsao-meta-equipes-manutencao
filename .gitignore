@@ -1,0 +1,16 @@
+# Dados brutos do contrato — nunca versionar
+data/raw/
+*.xlsx
+*.xls
+*.xlsm
+
+# Base não anonimizada
+base_modelagem_manutencao_at.csv
+
+# Ambiente
+.ipynb_checkpoints/
+__pycache__/
+.venv/
+venv/
+.env
+.DS_Store
