@@ -23,8 +23,8 @@ results/     métricas congeladas do holdout, para conferência da reprodução
    - Sem os arquivos brutos em `data/raw/`, a construção da base (Seção 2) é pulada e o notebook carrega a base agregada de `data/`.
 4. Comparar as métricas obtidas com `results/metricas_holdout.csv`. Os `assert` finais do notebook fazem essa conferência automaticamente.
 
-- Semente aleatória: **[PENDENTE]**
-- Python: **[PENDENTE]**
+- Semente aleatória: `random_state=42`
+- Python: 3.12.10
 - Versões travadas: `requirements.txt`
 
 ## Protocolo e resultados esperados
