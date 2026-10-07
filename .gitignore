@@ -4,7 +4,11 @@ data/raw/
 *.xls
 *.xlsm
 
-# Base não anonimizada
+# Configuração local com nomes reais e tabela de correspondência das equipes
+config_local.json
+mapa_equipes.csv
+
+# Base exportada pela Seção 2 (publicar só a versão anonimizada, após autorização)
 base_modelagem_manutencao_at.csv
 
 # Ambiente

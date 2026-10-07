@@ -17,11 +17,14 @@ results/     métricas congeladas do holdout, para conferência da reprodução
 
 ## Como executar
 
-1. Abrir `notebooks/Trabalho_Final_Modelo_ML_Franco_Andre_v3.ipynb` no Google Colab ou em um ambiente local.
+1. Abrir `notebooks/previsao_meta_equipes.ipynb` no Google Colab ou em um ambiente local.
 2. Instalar as dependências com `pip install -r requirements.txt`.
-3. Executar todas as células em ordem.
-   - Sem os arquivos brutos em `data/raw/`, a construção da base (Seção 2) é pulada e o notebook carrega a base agregada de `data/`.
-4. Comparar as métricas obtidas com `results/metricas_holdout.csv`. Os `assert` finais do notebook fazem essa conferência automaticamente.
+3. **Com os dados brutos** (detentor dos dados): colocar em `data/raw/` os dois arquivos `.xlsx` e o `config_local.json` (nomes de abas e de equipes usados nas correções de grafia) e executar todas as células em ordem.
+   - A Seção 2 recodifica as equipes como `EQ01…EQ52` e grava a correspondência em `data/raw/mapa_equipes.csv`.
+4. **Sem os dados brutos:** executar a célula 0.1 (imports) e, em seguida, a partir da Seção 3, com `base_modelagem_manutencao_at.csv` no diretório de trabalho.
+5. Comparar as métricas obtidas com `results/metricas_holdout.csv`.
+
+`data/raw/` está no `.gitignore`: dados brutos, configuração local e tabela de correspondência das equipes nunca entram no repositório.
 
 - Semente aleatória: `random_state=42`
 - Python: 3.12.10
