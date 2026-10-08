@@ -10,7 +10,7 @@ O trabalho usa três fontes internas do contrato Manutenção AT, cobrindo mar/2
 
 Esses arquivos contêm preços contratuais, faturamento detalhado e identificação de equipes. Por isso, **não são publicados neste repositório**. Ficam em `data/raw/`, bloqueado no `.gitignore`, junto com:
 
-- `config_local.json`: nomes de aba e de equipes usados nas correções de grafia e no rateio de meta (§2.4);
+- `config_local.json`: nomes de equipes usados nas correções de grafia e no rateio de meta (§2.4);
 - `mapa_equipes.csv`: correspondência nome original → código, gerada pelo notebook.
 
 ## Recodificação das equipes (já aplicada no notebook)

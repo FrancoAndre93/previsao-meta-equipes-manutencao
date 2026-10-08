@@ -19,7 +19,7 @@ results/     métricas congeladas do holdout, para conferência da reprodução
 
 1. Abrir `notebooks/previsao_meta_equipes.ipynb` no Google Colab ou em um ambiente local.
 2. Instalar as dependências com `pip install -r requirements.txt`.
-3. **Com os dados brutos** (detentor dos dados): colocar em `data/raw/` os dois arquivos `.xlsx` e o `config_local.json` (nomes de abas e de equipes usados nas correções de grafia) e executar todas as células em ordem.
+3. **Com os dados brutos** (detentor dos dados): colocar em `data/raw/` `Execucao_Contrato.xlsx`, `Medicao_por_Equipes.xlsx` e `config_local.json` (nomes de equipes usados nas correções de grafia) e executar todas as células em ordem.
    - A Seção 2 recodifica as equipes como `EQ01…EQ52` e grava a correspondência em `data/raw/mapa_equipes.csv`.
 4. **Sem os dados brutos:** executar a célula 0.1 (imports) e, em seguida, a partir da Seção 3, com `base_modelagem_manutencao_at.csv` no diretório de trabalho.
 5. Comparar as métricas obtidas com `results/metricas_holdout.csv`.
