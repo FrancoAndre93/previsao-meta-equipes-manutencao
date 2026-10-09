@@ -1,6 +1,8 @@
 # Previsão de atingimento de meta mensal por equipe — contrato Manutenção AT
 
-Código-fonte do TCC do MBA em Ciência de Dados (Unifor), orientação de Jorge Araújo.
+Código-fonte do TCC do MBA em Ciência de Dados (Universidade de Fortaleza — UNIFOR). Autor: Franco André Soares da Silva. Orientador: Prof. Jorge Luiz Araújo.
+
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/FrancoAndre93/previsao-meta-equipes-manutencao/blob/main/notebooks/previsao_meta_equipes.ipynb)
 
 **Problema.** Prever, no início do mês, quais equipes do contrato Manutenção AT não atingirão a meta financeira mensal. É uma classificação binária supervisionada, com alvo `atingiu_meta = 1` se `receita_mes >= meta_mes`, e cada amostra representa um par equipe × mês.
 
@@ -11,17 +13,19 @@ Código-fonte do TCC do MBA em Ciência de Dados (Unifor), orientação de Jorge
 ```
 notebooks/   notebook executado (scikit-learn 1.6.1): construção da base, modelagem e período descritivo
 data/        base agregada (ver data/README_dados.md) — arquivos brutos não são publicados
-figures/     figuras exportadas pelo notebook (PNG 300 dpi / PDF)
 results/     métricas congeladas (fora de dobra e período descritivo), para conferência
 ```
 
 ## Como executar
 
+O notebook está publicado **já executado**: todas as saídas e figuras podem ser lidas sem rodar nada. Duas saídas foram removidas por conterem valores contratuais (células 0.2 e 2.9). A reexecução exige os dados brutos, que não são públicos (ver Política de dados).
+
+
 1. Abrir `notebooks/previsao_meta_equipes.ipynb` no Google Colab ou em um ambiente local.
 2. Instalar as dependências com `pip install -r requirements.txt`.
 3. **Com os dados brutos** (detentor dos dados): colocar em `data/raw/` `Execucao_Contrato.xlsx`, `Medicao_por_Equipes.xlsx` e `config_local.json` (nomes de equipes usados nas correções de grafia) e executar todas as células em ordem.
    - A Seção 2 recodifica as equipes como `EQ01…EQ52` e grava a correspondência em `data/raw/mapa_equipes.csv`.
-4. **Sem os dados brutos:** executar a célula 0.1 (imports) e, em seguida, a partir da Seção 3, com `base_modelagem_manutencao_at.csv` no diretório de trabalho.
+4. **Com a base agregada** (`base_modelagem_manutencao_at.csv`, quando autorizada): executar a célula 0.1 (imports) e, em seguida, a partir da Seção 3.
 5. Comparar as métricas obtidas com `results/metricas_holdout.csv` (Seção 6.1–6.2 do notebook).
 
 `data/raw/` está no `.gitignore`: dados brutos, configuração local e tabela de correspondência das equipes nunca entram no repositório.

@@ -24,7 +24,7 @@ Na §2.4, após o casamento das 52 equipes entre apontamento e metas, cada equip
 
 ## O que é publicado
 
-**[PENDENTE — depende de autorização da coordenação e da empresa]**
+Nenhum dado é publicado nesta versão. A publicação da base agregada depende de autorização da empresa.
 
 Formato previsto: `base_modelagem_anonimizada.csv`, com a base agregada equipe × mês e as equipes já recodificadas. Transformação adicional prevista: as colunas monetárias são multiplicadas por um fator constante não divulgado.
 
@@ -32,4 +32,4 @@ Razões, indicadores de atingimento e defasamentos não se alteram com essa tran
 
 ## Como obter os dados completos
 
-**[PENDENTE]** — informar o responsável pela autorização e o procedimento de solicitação.
+Solicitações de acesso devem ser feitas ao autor, por meio de uma *issue* neste repositório. O acesso, para fins de verificação acadêmica, fica sujeito à autorização da empresa detentora dos dados.
